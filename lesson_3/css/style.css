@@ -1,0 +1,34 @@
+/* RESER STYLES */
+@import url("reset.css");
+
+* {
+    color: #302f2c;
+}
+
+[class*="__container"] {
+    background-color: #FCF5E4;
+}
+
+.btn .btn-text {
+    color: #ffb801;
+}
+
+.btn.white .btn-text {
+    color: aqua;
+}
+
+.title {
+    color: #5f0a0a;
+}
+
+.sub-title {
+    color: #1b1b1b
+}
+
+.title+.desc {
+    color: #338438
+}
+
+div.footer {
+    background-color: #F0EBDD;
+}
