@@ -49,6 +49,10 @@ section {
     display: inline-block;
     margin-bottom: 38px;
 }
+.text p:last-child {
+    margin-bottom: 0;
+}
+
 .img-fullwidth {
     display: block;
     margin: 0 auto;
