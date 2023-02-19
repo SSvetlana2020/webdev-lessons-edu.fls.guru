@@ -1,0 +1,76 @@
+@import url("reset.css");
+body {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.8; /* 25/14 */
+    color: #6C757D;
+
+    background-color: #E5E5E5;
+}
+article {
+    padding: 80px 15px;
+}
+article.aron {
+    padding: 100px 15px;
+}
+.space-40 {
+    height: 40px;
+}
+.space-60 {
+    height: 60px;
+}
+.space-80 {
+    height: 80px;
+}
+.space-100 {
+    height: 100px;
+}
+.wrap-1240 {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.wrap-816 {
+    max-width: 816px;
+    margin: 0 auto;
+}
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6; /* 40/25 */
+    color: #212529;
+
+    margin-bottom: 40px;
+    max-width: 605px;
+}
+.text {
+    margin-bottom: 32px;
+}
+.text:last-child{
+    margin-bottom: 80px;
+}
+.text.last-in-article {
+    margin-bottom: 0px;
+}
+.img-article {
+    width: 100%;
+    font-size: 0;
+}
+.img-article.vh-500 {
+    height: 500px;
+    margin-bottom: 100px;
+}
+.one-img,
+.two-img {
+    margin-bottom: 80px;
+}
+article.aron .one-img,
+article.aron .two-img {
+    margin-bottom: 100px;
+}
+.two-img .img-article{
+    width: auto;
+}
+.img-article.first-img {
+    margin-right: 26px;
+}
