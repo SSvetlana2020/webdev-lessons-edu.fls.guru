@@ -14,7 +14,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 1.6; /* 20/12 */
-    color: 495057;
+    color: #495057;
 
     background: url("../img/town.jpg") center/cover no-repeat;
     padding: 330px 0 85px;
