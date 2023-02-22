@@ -103,7 +103,6 @@ ol li:before {
     content: counter(item);
     display: inline-block;
     margin-right: 15px;
-    font-style: 20px;
     color: #fff;
 }
 ol li:not(:last-child){
