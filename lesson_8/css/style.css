@@ -176,6 +176,7 @@ ul.star li::before {
     font-size: 25px;
     line-height: 1.6; /* 40/25 */
     color: #F8F9FA;
+    text-transform: none;
 }
 .desc {
     font-weight: 300;
