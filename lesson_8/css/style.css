@@ -29,13 +29,13 @@ body {
 .wrap-1170 {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 81px 0;
 }
 #bluetooth .wrap-1440 {
-    background: url('../img/speaker.png') 100% 100% / contain no-repeat;
+    background: url('../img/gradient.svg') 100% 100% / contain no-repeat;
 }
 .wrap-570 {
     max-width: 570px;
-    padding: 145px 0;
 }
 .sup-title {
     font-weight: 600;
@@ -74,6 +74,21 @@ body {
     text-transform: capitalize;
     color: #3056D3;
     background: transparent;
+}
+.left {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 175px;
+}
+.right {
+    display: inline-block;
+    vertical-align: middle;
+}
+.bluetooth-img {
+    max-width: 598px;
+}
+img {
+    vertical-align: initial;
 }
 #list .wrap-1170 {
     padding: 150px 0;
