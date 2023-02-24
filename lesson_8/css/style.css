@@ -150,7 +150,7 @@ ul li::before {
     margin: 0 10px 0 -26px;
 }
 ul.boolet li::before {
-    background: url("../img/boolet.svg") 0 0 no-repeat;
+    background: url("../img/boolet.svg") 0 5px no-repeat;
 }
 ul.check-blue li::before {
     background: url("../img/check-blue.svg") 0 0 no-repeat;
