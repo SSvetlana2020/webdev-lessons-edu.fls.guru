@@ -146,10 +146,11 @@ ul li::before {
     display: inline-block;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
     margin: 0 10px 0 -26px;
 }
 ul.boolet li::before {
-    background: url("../img/boolet.svg") 0 10px no-repeat;
+    background: url("../img/boolet.svg") 0 0 no-repeat;
 }
 ul.check-blue li::before {
     background: url("../img/check-blue.svg") 0 0 no-repeat;
@@ -161,7 +162,7 @@ ul.red-cross li::before {
     background: url("../img/cross.svg") 0 0 no-repeat;
 }
 ul.arrow li::before {
-    background: url("../img/arrow.svg") 0 5px no-repeat;
+    background: url("../img/arrow.svg") 0 0 no-repeat;
 }
 ul.star li::before {
     background: url("../img/star.svg") 0 0 no-repeat;
