@@ -1,0 +1,36 @@
+@import url("reset.css");
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6; /* 24/15 */
+    background: #000;
+}
+section {
+    padding: 30px 15px;
+}
+section:not(:last-child) {
+    margin-bottom: 60px;
+}
+.hero {
+    padding-top: 30px;
+}
+h1.name{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.31; /* 46/35 */
+    /* or 130% */
+    color: #fff;
+}
+h2.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.12; /* 45/40 */
+
+    color: #ffffffb7;
+    margin-bottom: 15px;
+}
+.img {
+    margin: 10px;
+}
