@@ -13,73 +13,73 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<header></header>
-<main>
-    <section class="hero">
-        <h1 class="name">Web графіка</h1>
-    </section>
-    <section class="icons">
-        <h2 class="title">Контентні іконки</h2>
-        <div id="content-icon"></div>
-    </section>
-    <section class="icons-des">
-        <h2 class="title">Елементи дизайну (іконки)</h2>
-        <div id="design-icon"></div>
-    </section>
-    <section class="imgs">
-        <h2 class="title">Контентні зображення (мій антивірус не пропустив сайт convertio .co)</h2>
-        <div>
-            <img src="img/18.jpg" alt="дівчина" class="retino" srcset="img/18.jpg 1x, img/19.jpg 2x">
-        </div>
-        <div id="content-img"></div>
-    </section>
-</main>
-<footer></footer>
-<script>
-    function loadIconsDes(i) {
-        i = i || 1;
-        var img = new Image();
-        img.onload = function () {
-            let into = document.getElementById("design-icon")
-            into.appendChild(img)
-            loadIconsDes(++i);
-        }
-        img.className = 'img';
-        // img.id = 'img1';
-        img.src = 'icon/des/' + i + '.svg';
-    }
-    loadIconsDes();
-
-    function loadIcons(i) {
-        i = i || 1;
-        var img = new Image();
-        img.onload = function () {
-            let into = document.getElementById("content-icon")
-            into.appendChild(img)
-            loadIcons(++i);
-        }
-        img.className = 'img';
-        // img.id = 'img1';
-        img.src = 'icon/' + i + '.svg';
-    }
-    loadIcons();
-
-    function loadImgs(i) {
-        i = i || 1;
-        var img = new Image();
-        img.onload = function () {
-            let into = document.getElementById("content-img")
-            into.appendChild(img)
-            loadImgs(++i);
-        }
-        img.className = 'img';
-        // img.id = 'img1';
-        img.src = 'img/' + i + '.png';
-    }
-    loadImgs();
-</script>
 
 <body>
+    <header></header>
+    <main>
+        <section class="hero">
+            <h1 class="name">Web графіка</h1>
+        </section>
+        <section class="icons">
+            <h2 class="title">Контентні іконки</h2>
+            <div id="content-icon"></div>
+        </section>
+        <section class="icons-des">
+            <h2 class="title">Елементи дизайну (іконки)</h2>
+            <div id="design-icon"></div>
+        </section>
+        <section class="imgs">
+            <h2 class="title">Контентні зображення (мій антивірус не пропустив сайт convertio .co)</h2>
+            <div>
+                <img src="img/18.jpg" alt="дівчина" class="retino" srcset="img/18.jpg 1x, img/19.jpg 2x">
+            </div>
+            <div id="content-img"></div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        function loadIconsDes(i) {
+            i = i || 1;
+            var img = new Image();
+            img.onload = function () {
+                let into = document.getElementById("design-icon")
+                into.appendChild(img)
+                loadIconsDes(++i);
+            }
+            img.className = 'img';
+            // img.id = 'img1';
+            img.src = 'icon/des/' + i + '.svg';
+        }
+        loadIconsDes();
+
+        function loadIcons(i) {
+            i = i || 1;
+            var img = new Image();
+            img.onload = function () {
+                let into = document.getElementById("content-icon")
+                into.appendChild(img)
+                loadIcons(++i);
+            }
+            img.className = 'img';
+            // img.id = 'img1';
+            img.src = 'icon/' + i + '.svg';
+        }
+        loadIcons();
+
+        function loadImgs(i) {
+            i = i || 1;
+            var img = new Image();
+            img.onload = function () {
+                let into = document.getElementById("content-img")
+                into.appendChild(img)
+                loadImgs(++i);
+            }
+            img.className = 'img';
+            // img.id = 'img1';
+            img.src = 'img/' + i + '.png';
+        }
+        loadImgs();
+    </script>
 
 </body>
 
