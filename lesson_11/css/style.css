@@ -1,0 +1,217 @@
+@import url("reset.css");
+@import url("common.css");
+
+body {
+	font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 24/16 */
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #fff;
+}
+.header__container {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+}
+.header__img {
+}
+.header__menu {
+}
+.menu {
+    color: #212B36;
+}
+
+.menu__list {
+}
+.menu__item {
+    position: relative;
+	display: inline-block;
+}
+.menu__item:hover .menu__sub-menu {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.menu__item:not(:last-child) {
+	margin-right: 0;
+}
+.menu__link {
+	display: inline-block;
+	padding: 15px 22px;
+}
+.menu__link:hover {
+	color: #3056D3;
+    background-color: #F4F7FF;
+}
+.menu__link.menu__link--checked::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 6px;
+        background: url("../img/checked.svg") 0 0 / 10px no-repeat;
+        /* border:1px solid #212B36; */
+}
+.menu__sub-menu {
+    position: absolute;
+	top: 100%;
+	left: -24px;
+	background-color: #fff;
+	padding: 22px 0;
+	z-index: 1;
+	min-width: 180px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s;
+
+    border: .5px solid #E7E7E7;
+    border-radius: 5px;
+}
+.sub-menu {
+    color: #637381;
+    font-weight: 500;
+}
+.sub-menu__item {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 12px;
+}
+.sub-menu__link:hover,
+.sub-menu__item:active {
+	color: #3056D3;
+}
+.sub-menu__link {
+}
+.header__user {
+}
+.menu__img {
+}
+.sub-menu__item:hover .sub-menu__wrap-list {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.sub-menu__wrap-list {
+    position: absolute;
+	top: 20px;
+	left: 100%;
+	background-color: #fff;
+	padding: 22px 24px;
+	z-index: 1;
+	min-width: 180px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s;
+
+    border: .5px solid #E7E7E7;
+    border-radius: 5px;
+}
+.sub-sub-menu__item:not(:last-child) {
+	margin-bottom: 13px;
+}
+.sub-sub-menu__item:first-child {
+    margin-bottom: 20px;
+    color: #212B36;
+    font-weight: 500;
+}
+.sub-sub-menu__link:hover {
+	color: #3056D3;
+}
+.sub-menu__wrap-list {
+    display: flex;
+    gap: 80px;
+    align-items: stretch;
+}
+.sub-menu__menu-wrapper{
+    min-width: 166px;
+}
+.sub-menu__menu-wrapper.img {
+}
+.sub-menu__menu-wrapper.sub-menu__menu-wrapper--bg {
+    background: url("../img/menu-image.png") center/cover no-repeat;  
+    min-width: 220px;
+    min-height: 228px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+} 
+.sub-menu__wrap-txt {
+    text-align: center;
+}
+.sub-menu__txt {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2; /* 24/20 */
+    margin-bottom: 21px;
+}
+.sub-menu__txt span {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    display: block;
+}
+.sub-sub-menu__btn {
+    background-color: #3056D3;
+    padding: 7px 14px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1.18; /* 13/11 */
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.14);
+    display: inline-block;
+}
+.header__user {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__link {
+    display: inline-block;
+}
+.header__likes,
+.header__purchase {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.18; /* 13/11 */
+    background-color: #3056D3;
+    border-radius: 100px;
+    /* padding: 3px; */
+    min-height: 16px;
+    min-width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -6px;
+    right: -10px;
+}
+.header__link.header__link--core {
+    position: relative;
+}
+.header__likes.header__likes--core {
+    position: absolute;
+}
+.header__link.header__link--basket {
+    position: relative;
+}
+.header__purchase.header__purchase--basket {
+    position: absolute;
+}
