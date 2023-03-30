@@ -96,6 +96,14 @@ body {
 }
 .sub-menu__link {
 }
+.sub-menu__link.sub-menu__link--checked::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background: url("../img/checked-blue.svg") 0 0 / 5px no-repeat;
+    margin-left: 60px;
+}
 .header__user {
 }
 .menu__img {
