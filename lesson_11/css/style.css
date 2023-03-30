@@ -62,7 +62,7 @@ body {
         width: 10px;
         height: 6px;
         background: url("../img/checked.svg") 0 0 / 10px no-repeat;
-        /* border:1px solid #212B36; */
+        margin-left: 10px;
 }
 .menu__sub-menu {
     position: absolute;
