@@ -228,6 +228,7 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: #000000;
+    text-transform: uppercase;
 }
 .title__line {
     height: 2px;
