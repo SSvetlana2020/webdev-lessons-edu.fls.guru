@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main class="page">
+            <div class="page__section checkout-form">
+                <div class="checkout-form__container">
+                    <div class="checkout-form__top">
+                        <h1 class="checkout-form__page-title">Checkout</h1>
+                        <div class="checkout-form__desc">There are <span>3</span> products in your cart</div>
+                    </div>
+                    <div class="checkout-form__content">
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                            class="checkout-form__form">
+                            <div class="checkout-form__wrapper">
+                                <div class="checkout-form__col bill-order">
+                                    <h2 class="checkout-form__title">Billing Details</h2>
+                                    <div class="bill-order__row">
+                                        <div class="bill-order__col">
+                                            <div class="bill-order__line">
+                                                <input required id="first-name" type="text" name="first-name"
+                                                    placeholder="First name" class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input required id="address" type="text" name="address"
+                                                    placeholder="Address" class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input required id="country" type="text" name="country"
+                                                    placeholder="Country" class="bill-order__input">
+                                                <!-- <select class="form-control" id="country" name="country">
+                                                    <option>Country*</option>
+                                                    <option>Ukraine</option>
+                                                    <option>Slovakia</option>
+                                                </select> -->
+
+
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input required id="postcode" type="text" name="postcode"
+                                                    placeholder="Postcode / ZIP" class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input id="postcode" type="text" name="postcode"
+                                                    placeholder="Postcode / ZIP" class="bill-order__input">
+                                            </div>
+                                        </div>
+                                        <div class="bill-order__col">
+                                            <div class="bill-order__line">
+                                                <input required id="last-name" type="text" name="last-name"
+                                                    placeholder="Last name" class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input id="address-2" type="text" name="address-2"
+                                                    placeholder="Address line 2" class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input required id="city" type="text" name="city"
+                                                    placeholder="City/Town" class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input required id="phone" type="tel" name="phone" placeholder="Phone"
+                                                    class="bill-order__input">
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <input id="phone-2" type="tel" name="phone-2" placeholder="Phone 2"
+                                                    class="bill-order__input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bill-order__row">
+                                        <div class="bill-order__col">
+                                            <div class="bill-order__line">
+                                                <div>
+                                                    <textarea autocomplete="off" name="message" class="bill-order__area"
+                                                        placeholder="Additional information"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <div class="checkbox">
+                                                    <input id="create-account" class="checkbox__input"
+                                                        autocomplete="off" value="yes" name="create-account"
+                                                        type="checkbox">
+                                                    <label class="checkbox__label" for="create-account">Create
+                                                        Account</label>
+                                                </div>
+                                            </div>
+                                            <div class="bill-order__line">
+                                                <div class="checkbox">
+                                                    <input id="ship-different-address" class="checkbox__input"
+                                                        autocomplete="off" value="yes" name="ship-different-address"
+                                                        type="checkbox">
+                                                    <label class="checkbox__label" for="ship-different-address">Ship to
+                                                        a different address?</label>
+                                                </div>
+                                            </div>
+                                            <div class="bill-order__line coupon">
+                                                <h3 class="coupon__title">Apply Coupon to get discount!</h3>
+                                                <div class="coupon__content">
+                                                    <div class="coupon__line">
+                                                        <input required id="coupon" type="text" name="coupon"
+                                                            placeholder="Coupon code" class="coupon__input">
+                                                    </div>
+                                                    <div class="cupon__line">
+                                                        <button id="coupon-btn" type="submit"
+                                                            class="btn btn--black">Apply
+                                                            Code</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-form__col order">
+                                    <h2 class="checkout-form__title">Your Order</h2>
+                                </div>
+                            </div>
+                            <div class="checkout-form__btn">
+                                <button type="submit" class="btn">Place an Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer></footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

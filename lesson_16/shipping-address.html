@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Address</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shipping-address.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top"></div>
+        </header>
+        <main class="page">
+            <div class="page__container shipping">
+                <div class="shipping__row">
+                    <div class="shipping__col shipping-address">
+                        <h2 class="shipping-address__title">Shipping Address</h2>
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                            class="shipping-address__form">
+                            <div class="form__line">
+                                <label class="form__label" for="email-01">Email Address <span>*</span></label>
+                                <input required class="form__input" id="email-01" autocomplete="off"
+                                    placeholder="roni_cost@example.com" name="email" type="email">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="pass-01">Password</label>
+                                <input class="form__input" id="pass-01" autocomplete="off"
+                                    placeholder="******************" name="email" type="password">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="postcode-01">Zip/Postal Code</label>
+                                <input class="form__input" id="postcode-01" autocomplete="off" placeholder=""
+                                    name="email" type="text">
+                                <p class="form__desc">You already have an account with us. Sign in or continue as guest.
+                                </p>
+                            </div>
+                            <div class="form__line form__line--center">
+                                <div class="form__btn">
+                                    <button type="submit" class="btn">login</button>
+                                </div>
+                                <a href="#" class="form__recover">Forgot Your Password?</a>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="form__line">
+                                <label class="form__label" for="first-name-01">First Name <span>*</span></label>
+                                <input required class="form__input" id="first-name-01" autocomplete="off" placeholder=""
+                                    name="first-name" type="text">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="last-name-01">Last Name <span>*</span></label>
+                                <input required class="form__input" id="last-name-01" autocomplete="off" placeholder=""
+                                    name="last-name" type="text">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="company-01">Company</label>
+                                <input class="form__input" id="company-01" autocomplete="off" placeholder=""
+                                    name="company" type="text">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="street-address-01">Street Address <span>*</span></label>
+                                <input required class="form__input" id="street-address-01" autocomplete="off"
+                                    placeholder="" name="street-address" type="text">
+                            </div>
+                            <div class="form__line form__line--right">
+                                <input class="form__input" id="street-address-02" autocomplete="off" placeholder=""
+                                    name="street-address" type="text">
+                            </div>
+                            <div class="form__line form__line--right">
+                                <input class="form__input" id="street-address-03" autocomplete="off" placeholder=""
+                                    name="street-address" type="text">
+                            </div>
+
+                            <div class="form__line">
+                                <label class="form__label" for="country-01">Country <span>*</span></label>
+                                <input required class="form__input" id="country-01" autocomplete="off" placeholder=""
+                                    name="country" type="text">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="state-01">State/Province <span>*</span></label>
+                                <input required class="form__input" id="state-01" autocomplete="off"
+                                    placeholder="Please select a region, state or province" name="state" type="text">
+                            </div>
+                            <h2 class="shipping-address__title">Shipping Methods</h2>
+
+                        </form>
+                    </div>
+                    <div class="shipping__col order-summary">
+                        <h2 class="order-summary__title">Order Summary</h2>
+                    </div>
+                </div>
+                <div class="shipping__row"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="bottom"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
