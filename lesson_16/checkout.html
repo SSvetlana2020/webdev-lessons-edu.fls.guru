@@ -39,22 +39,22 @@
                                                     placeholder="Address" class="bill-order__input">
                                             </div>
                                             <div class="bill-order__line">
-                                                <input required id="country" type="text" name="country"
-                                                    placeholder="Country" class="bill-order__input">
-                                                <!-- <select class="form-control" id="country" name="country">
-                                                    <option>Country*</option>
+                                                <!-- <input required id="country" type="text" name="country"
+                                                    placeholder="Country" class="bill-order__input"> -->
+                                                <select required class="form-control" id="country" name="country">
+                                                    <option>Country *</option>
                                                     <option>Ukraine</option>
                                                     <option>Slovakia</option>
-                                                </select> -->
+                                                </select>
 
 
                                             </div>
                                             <div class="bill-order__line">
-                                                <input required id="postcode" type="text" name="postcode"
+                                                <input required id="postcode-01" type="text" name="postcode01"
                                                     placeholder="Postcode / ZIP" class="bill-order__input">
                                             </div>
                                             <div class="bill-order__line">
-                                                <input id="postcode" type="text" name="postcode"
+                                                <input id="postcode-02" type="text" name="postcode02"
                                                     placeholder="Postcode / ZIP" class="bill-order__input">
                                             </div>
                                         </div>
@@ -72,11 +72,11 @@
                                                     placeholder="City/Town" class="bill-order__input">
                                             </div>
                                             <div class="bill-order__line">
-                                                <input required id="phone" type="tel" name="phone" placeholder="Phone"
+                                                <input required id="phone" type="tel" name="phone01" placeholder="Phone"
                                                     class="bill-order__input">
                                             </div>
                                             <div class="bill-order__line">
-                                                <input id="phone-2" type="tel" name="phone-2" placeholder="Phone 2"
+                                                <input id="phone-2" type="tel" name="phone02" placeholder="Phone 2"
                                                     class="bill-order__input">
                                             </div>
                                         </div>
@@ -91,9 +91,8 @@
                                             </div>
                                             <div class="bill-order__line">
                                                 <div class="checkbox">
-                                                    <input id="create-account" class="checkbox__input"
-                                                        autocomplete="off" value="yes" name="create-account"
-                                                        type="checkbox">
+                                                    <input id="create-account" class="checkbox__input" value="yes"
+                                                        name="create-account" type="checkbox">
                                                     <label class="checkbox__label" for="create-account">Create
                                                         Account</label>
                                                 </div>
@@ -101,8 +100,7 @@
                                             <div class="bill-order__line">
                                                 <div class="checkbox">
                                                     <input id="ship-different-address" class="checkbox__input"
-                                                        autocomplete="off" value="yes" name="ship-different-address"
-                                                        type="checkbox">
+                                                        value="yes" name="ship-different-address" type="checkbox">
                                                     <label class="checkbox__label" for="ship-different-address">Ship to
                                                         a different address?</label>
                                                 </div>
@@ -111,7 +109,7 @@
                                                 <h3 class="coupon__title">Apply Coupon to get discount!</h3>
                                                 <div class="coupon__content">
                                                     <div class="coupon__line">
-                                                        <input required id="coupon" type="text" name="coupon"
+                                                        <input id="coupon" type="text" name="coupon"
                                                             placeholder="Coupon code" class="coupon__input">
                                                     </div>
                                                     <div class="cupon__line">
@@ -135,10 +133,9 @@
                     </div>
                 </div>
             </div>
+        </main>
     </div>
-    </main>
     <footer></footer>
-    </div>
     <script src="js/script.js"></script>
 </body>
 

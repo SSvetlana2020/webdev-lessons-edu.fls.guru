@@ -24,7 +24,7 @@
                 <div class="shipping__row">
                     <div class="shipping__col shipping-address">
                         <h2 class="shipping-address__title">Shipping Address</h2>
-                        <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                        <form id="login-form" action="https://jsonplaceholder.typicode.com/posts" method="post"
                             class="shipping-address__form">
                             <div class="form__line">
                                 <label class="form__label" for="email-01">Email Address <span>*</span></label>
@@ -49,7 +49,10 @@
                                 </div>
                                 <a href="#" class="form__recover">Forgot Your Password?</a>
                             </div>
-                            <div class="divider"></div>
+                        </form>
+                        <div class="divider"></div>
+                        <form id="shipping-form" action="https://jsonplaceholder.typicode.com/posts" method="post"
+                            class="shipping-address__form">
                             <div class="form__line">
                                 <label class="form__label" for="first-name-01">First Name <span>*</span></label>
                                 <input required class="form__input" id="first-name-01" autocomplete="off" placeholder=""
@@ -81,16 +84,28 @@
 
                             <div class="form__line">
                                 <label class="form__label" for="country-01">Country <span>*</span></label>
-                                <input required class="form__input" id="country-01" autocomplete="off" placeholder=""
-                                    name="country" type="text">
+                                <!-- <input required class="form__input" id="country-01" autocomplete="off" placeholder=""
+                                    name="country" type="text"> -->
+                                <select required class="form-control" id="country-01" name="country">
+                                    <option> </option>
+                                    <option>Ukraine</option>
+                                    <option>Slovakia</option>
+                                </select>
                             </div>
                             <div class="form__line">
                                 <label class="form__label" for="state-01">State/Province <span>*</span></label>
-                                <input required class="form__input" id="state-01" autocomplete="off"
-                                    placeholder="Please select a region, state or province" name="state" type="text">
+                                <select required class="form-control" id="state-01" name="state">
+                                    <option>Please select a region, state or province</option>
+                                    <option>Kharkiv</option>
+                                    <option>Kyiv</option>
+                                </select>
+                                <!-- <input required class="form__input" id="state-01" autocomplete="off"
+                                    placeholder="Please select a region, state or province" name="state" type="text"> -->
                             </div>
                             <h2 class="shipping-address__title">Shipping Methods</h2>
-
+                            <div class="form__btn">
+                                <button type="submit" class="btn">Submit</button>
+                            </div>
                         </form>
                     </div>
                     <div class="shipping__col order-summary">

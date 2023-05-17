@@ -81,7 +81,8 @@ body {
 .form__line:not(:last-child){
     margin-bottom: 27px;
 }
-input {
+input,
+select {
     flex: 0 0 74%; /* 451/606 */
 	font-weight: 500;
     font-size: 16px;
@@ -90,8 +91,10 @@ input {
 
     padding: 15px 16px;
     border: 1px solid #C4C4C4;
+    background: transparent;
 }
-input:focus {
+input:focus,
+select:focus {
     border: 1px solid #3056D3;
 }
 label {
@@ -127,6 +130,11 @@ label > span {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    transition: all 0.3s;
+}
+.btn:hover {
+    background: #3c3c3c;
 }
 .form__recover {
     font-family: 'Roboto';
@@ -135,9 +143,32 @@ label > span {
     font-size: 14px;
     line-height: 1.42; /* 20/14 */
     color: #0F6DB1;
+
+    transition: all 0.3s;
+}
+.form__recover:hover {
+    color: #000;
 }
 .divider {
     height: 1px;
     background: #C4C4C4;
-    margin-bottom: 25px;
+    margin: 25px 0;
+}
+
+@media (max-width: 991.98px) {
+    label {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+    input {
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .shipping-address {
+        flex: 1 1 100%;
+    }
+    .order-summary {
+        flex: 1 1 100%;
+    }
 }
