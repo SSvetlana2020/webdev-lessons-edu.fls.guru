@@ -84,25 +84,60 @@
 
                             <div class="form__line">
                                 <label class="form__label" for="country-01">Country <span>*</span></label>
-                                <!-- <input required class="form__input" id="country-01" autocomplete="off" placeholder=""
-                                    name="country" type="text"> -->
-                                <select required class="form-control" id="country-01" name="country">
+                                <input required class="form__input" id="country-01" autocomplete="off" placeholder=""
+                                    name="country" type="text">
+                                <!-- <select required class="form__control" id="country-01" name="country">
                                     <option> </option>
                                     <option>Ukraine</option>
                                     <option>Slovakia</option>
-                                </select>
+                                </select> -->
                             </div>
                             <div class="form__line">
                                 <label class="form__label" for="state-01">State/Province <span>*</span></label>
-                                <select required class="form-control" id="state-01" name="state">
-                                    <option>Please select a region, state or province</option>
-                                    <option>Kharkiv</option>
-                                    <option>Kyiv</option>
+                                <select required class="form__control" id="state-01" name="state">
+                                    <option value=''>Please select a region, state or province</option>
+                                    <option value='1'>Kharkiv</option>
+                                    <option value='2'>Kyiv</option>
                                 </select>
                                 <!-- <input required class="form__input" id="state-01" autocomplete="off"
                                     placeholder="Please select a region, state or province" name="state" type="text"> -->
                             </div>
                             <h2 class="shipping-address__title">Shipping Methods</h2>
+                            <div class="divider"></div>
+                            <div class="form__line">
+                                <div class="radio">
+                                    <div class="radio__item">
+                                        <input checked class="radio__input" id="shipping-method-01" value="flat-rate"
+                                            name="brand" type="radio">
+                                        <label class="radio__label" for="shipping-method-01">
+                                            <span class="radio__det">
+                                                $5.00
+                                            </span>
+                                            <span class="radio__det">
+                                                Fixed
+                                            </span>
+                                            <span class="radio__det">
+                                                Flat Rate
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="radio__item">
+                                        <input checked class="radio__input" id="shipping-method-02" value="flat-rate"
+                                            name="brand" type="radio">
+                                        <label class="radio__label" for="shipping-method-02">
+                                            <span class="radio__det">
+                                                $10.00
+                                            </span>
+                                            <span class="radio__det">
+                                                Table Rate
+                                            </span>
+                                            <span class="radio__det">
+                                                Best Way
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form__btn">
                                 <button type="submit" class="btn">Submit</button>
                             </div>

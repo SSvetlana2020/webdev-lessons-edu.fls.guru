@@ -154,14 +154,58 @@ label > span {
     background: #C4C4C4;
     margin: 25px 0;
 }
-
+/* */
+.radio {
+    flex: 0 0 73.10231%; /* 443/606 */
+    width: 100%;
+    margin-bottom: 24px;
+}
+.radio__input {
+    flex: 0 0 2.257336%; /* 10/443 */
+}
+.radio__item {
+    padding: 15px 16px 15px 0;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+}
+.radio__item:first-child {
+    padding-top: 0;
+}
+.radio__item:not(:last-child) {
+    border-bottom: 1px solid #C4C4C4;
+}
+.radio__label {
+    flex: 0 0 97%;
+    padding-left: 13px;
+    display: inline-flex;
+    gap: 13px;
+}
+.radio__det {
+    display: block;
+    flex: 0 0 33%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 142.857143%; /* 20/14 */
+    color: #3F3F3F;
+    display: inline-block;
+}
 @media (max-width: 991.98px) {
     label {
         flex: 0 0 100%;
         margin-bottom: 15px;
     }
-    input {
+    input,
+    select {
         flex: 0 0 100%;
+    }
+    .radio {
+        flex: 0 0 100%;
+    }
+    .radio__label {
+        margin-bottom: 0;
     }
 }
 @media (max-width: 767.98px) {
