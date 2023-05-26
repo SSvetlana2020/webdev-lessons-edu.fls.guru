@@ -534,11 +534,15 @@ a:hover .fproducts__item {
     transition: all 0.3s;
     border: 1px solid #E7E7E7;
     border-radius: 8px;
-    /* padding-bottom: 30px; */
+    overflow: hidden;
 }
 .fproducts__img {
     overflow: hidden;
     margin-bottom: 20px;
+    transition: all 0.3s;
+}
+a:hover .fproducts__img {
+    transform: scale(1.01);
 }
 .fproducts__img img {
     width: 100%;
@@ -548,6 +552,10 @@ a:hover .fproducts__item {
     flex-direction: column;
     row-gap: 10px;
     padding: 30px;
+    transition: all 0.3s;
+}
+a:hover .fproducts__content {
+    transform: scale(1.01);
 }
 .fproducts__category {
     display: flex;
